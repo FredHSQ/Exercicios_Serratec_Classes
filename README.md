@@ -43,6 +43,7 @@
         <li><a href="#exercicio-6">Exercicio 6</a></li>
       </ul>
     </ul>
+    <li><a href="#contribuidores">Contribuidores</a></li>
     <li><a href="#contato">Contato</a></li>
   </ol>
 </details>
@@ -142,19 +143,16 @@ Cada pasta contém a etapa anterior completa, e dever ser utilizada para continu
     No Exercício 2 o objetivo será componentizar a tela anteriormente criada, agora dando funções às partes necessárias. Sendo possível cadastrar e adicionar um sonho a uma lista que será mostrada na página inicial.
     <h5> Requisitos </h5>
     <ul>
-      <li> cadastro feito através de um modal </li>
-      <li> data deve sempre iniciar com a data atual </li>
-      <li> adicionar e retirar Tags durante o cadastro, tendo um máximo de 3 tags por sonho </li>
-      <li> ao serem adicionada deve ser possível ver as tags já cadastradas </li>
+      <li> cadastro feito através dos inputs </li>
       <li> os sonhos devem ser exibidos em cards </li>
+      <li> o container dos cards deve conter scroll </li>
+      <li> caso necessário usar o componente KeyboardAvoidView </li>
     </ul>
   </p>
 
   <div>
-    <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/Tela_1-primeiro-acesso.jpeg?raw=true" alt="Tela Inicial sem dados" width="200" height="500">
-    <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/modal-1.jpeg?raw=true" alt="Exemplo modal 1" width="200" height="500">
-    <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/modal-2.jpeg?raw=true" alt="Exemplo modal 2" width="200" height="500">
-    <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/Tela_1-conteúdo.jpeg?raw=true" alt="Tela Inicial com dados" width="200" height="500">
+    <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/WhatsApp Image 2023-11-07 at 12.46.54 (4).jpeg?raw=true" alt="Tela Inicial sem dados" width="200" height="500">
+<img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercício_2-Ref/Exercício_2-Ref.jpeg?raw=true" alt="Tela Inicial clone visual" width="200" height="500">
   </div>
 </div>
 
@@ -165,14 +163,15 @@ Cada pasta contém a etapa anterior completa, e dever ser utilizada para continu
     <h5> Requisitos </h5>
     <ul>
       <li> a navegação para a páginas de detalhes deve ser feita através de um onPress, ou onLongPress, no Card de Sonho </li>
-      <li> na tela de Detalhes de sonhos deve haver o modal Editar o sonho</li>
-      <li> na tela de Detalhes deve existir um botão de "voltar"</li>
+      <li> navegação para tela de favoritos </li>
+      <li> na tela de Detalhes de sonhos deve haver botão "Editar" </li>
+      <li> na tela de Detalhes deve existir um botão de "voltar" </li>
     </ul>
   </p>
 
-  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_4-Ref/Tela_2-Detalhes.jpeg?raw=true" alt="Tela Detalhes" width="200" height="500">
-  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_4-Ref/Tela_2-EditarModal-1.jpeg?raw=true" alt="Tela Modal editar" width="200" height="500">
-  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_4-Ref/Tela_2-SonhoEditado.jpeg?raw=true" alt="Tela Sonho Editado" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/WhatsApp Image 2023-11-07 at 12.46.54 (2).jpeg?raw=true" alt="Tela inicial sem dados" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/WhatsApp Image 2023-11-07 at 12.46.54 (1).jpeg?raw=true" alt="Tela inicial com dados" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/WhatsApp Image 2023-11-07 at 12.46.54 (3).jpeg?raw=true" alt="Tela Detalhes" width="200" height="500">
   <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_4-Ref/Tela_3-favoritos.jpeg?raw=true" alt="Tela Favoritos sem dados" width="200" height="500">
  </div>
 
@@ -180,14 +179,26 @@ Cada pasta contém a etapa anterior completa, e dever ser utilizada para continu
 <div style={{ display: flex, flex-direction: row }}>
   <p>
     No Exercício 4 deverá ser criado um service para requisições utilizando a <a href="http://www.wdisseny.com/lluna/?lang=en">MoonPhaseAPI</a>. na tela inicial, acima do botão "Adicionar Sonho" deverá ser exibida fase da lua do dia atual, juntamente com o ano, mês, dia do mês e da semana.
+    O form de cadastro será refatorado em um modal que também será usado na páfina de detalhes para editar o sonho. E o tipo sonho terá propriedades adicionais
     <h5> Requisitos </h5>
     <ul>
       <li> deverá ser utilizada a biblioteca <a href="https://github.com/software-mansion/react-native-svg">React Native SVG</a> para a exibição da imagem mostrando a fase atual da Lua </li>
+      <li> atualizar tipo sonho com as propriedades Data, e Tags. </li>
+      <li> refatorar card de sonho, e tela detalhes, para incluir as novas propriedades </li>
+      <li> cadastro agors deverá ser feito através de um modal </li>
+      <li> data deve sempre iniciar com a data atual </li>
+      <li> adicionar e retirar Tags durante o cadastro, tendo um máximo de 3 tags por sonho </li>
+      <li> ao serem adicionada deve ser possível ver as tags já cadastradas </li>
     </ul> 
   </p>
 
-  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_5-Ref/FasesDaLuaAPI.jpeg?raw=true" alt="Tela Inicial com API" width="200" height="500">
- </div>
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_5-Ref/FasesDaLuaAPI.jpeg?raw=true" alt="modal-1" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_6-Ref/Tela_1-FavoritosImplemented.jpeg?raw=true" alt="modal-3" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/modal-1.jpeg?raw=true" alt="Tela Inicial com API" width="200" height="500">
+   <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/modal-2.jpeg?raw=true" alt="modal-2" width="200" height="500">
+   <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_3-Ref/modal-3.jpeg?raw=true" alt="modal-3" width="200" height="500">
+  <img src="https://github.com/BragaMPedro/ReactNative_2023-2/blob/main/images/Exercicio_4-Ref/Tela_2-Detalhes.jpeg?raw=true" alt="modal-3" width="200" height="500">
+   </div>
 
 #### Exercicio 5
 <div style={{ display: flex, flex-direction: row }}>
@@ -225,6 +236,36 @@ Cada pasta contém a etapa anterior completa, e dever ser utilizada para continu
  </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Contribuidores
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/frederico-sheremetieff-0a6759190/">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/82114311?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Frederico Sheremetieff</b></sub>
+      </a>
+      <br />
+       <br />
+      <a href="https://www.linkedin.com/in/frederico-sheremetieff-0a6759190/" title="LindedIn">
+        <img src="https://img.shields.io/badge/-Frederico-blue?style=flat-square&logo=Linkedin&logoColor=white" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/pedrobragaresume/">
+        <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/111090976?v=4" width="100px;" alt=""/>
+        <br />
+        <sub><b>Pedro Braga</b></sub>
+      </a>
+      <br />
+       <br />
+      <a href="https://www.linkedin.com/in/pedrobragaresume/" title="LindedIn">
+        <img src="https://img.shields.io/badge/-Pedro-blue?style=flat-square&logo=Linkedin&logoColor=white" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 <!-- CONTACT -->
 
