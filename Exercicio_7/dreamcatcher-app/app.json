@@ -4,12 +4,12 @@
     "slug": "dreamcatcher-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "../../images/gato-logo-3-no-bg.png",
+    "icon": "assets/gato-logo-3-no-bg.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "../../images/Splashscreen.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
+      "image": "assets/Splashscreen.png",
+      "resizeMode": "contain"
+
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "../../images/gato-logo-3-no-bg.png",
+        "foregroundImage": "assets/gato-logo-3-no-bg.png",
         "backgroundColor": "#3f45cdc9"
       }
     },
     "web": {
-      "favicon": "../images/gato-logo-3-no-bg.png"
+      "favicon": "assets/gato-logo-3-no-bg.png"
     }
   }
 }
